@@ -45,7 +45,8 @@ export function initShortcuts() {
 					save('copy')
 					return
 				}
-				case 'KeyK': {
+				case 'KeyK':
+				case 'Slash': {
 					if (e.repeat) return
 					e.preventDefault()
 					state.menu.toggle()

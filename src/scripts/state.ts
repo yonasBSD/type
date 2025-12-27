@@ -34,9 +34,6 @@ export const state = {
 	// Elements
 	mainEl: null as HTMLElement,				// Editor + Notes (w/o header)
 	editorEl: null as HTMLElement,				// Lowest-level editor container
-
-	// Platform-specific
-	ctrlKey: 'Ctrl'								// Ctrl / Meta key for shortcuts
 }
 
 export async function initState() {
@@ -51,8 +48,6 @@ export async function initState() {
 	initFont()
 
 	state.mainEl = getByTag('main')
-
-	if (isMac) state.ctrlKey = '⌘'
 }
 
 export function updateStatus(status: Status) {

@@ -10,7 +10,6 @@ import { save } from '@scripts/note/save'
 import { state } from '@scripts/state'
 import { isMac } from '@scripts/utils/isMac'
 
-// MDN says it's okay
 const ctrl = isMac() ? '⌘' : 'Ctrl'
 const shift = 'Shift'
 

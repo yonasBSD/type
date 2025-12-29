@@ -95,10 +95,11 @@
     transition: opacity var(--transition-s), transform var(--transition-m)
 
     li
-        animation: show-up linear both
-        animation-duration: 1ms
-        animation-timeline: view()
         transform-origin: 20% center
+        @supports (animation-timeline: view())
+            animation: show-up linear both
+            animation-duration: 1ms
+            animation-timeline: view()
 
     button, a
         width: 100%
